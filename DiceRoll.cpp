@@ -5,7 +5,7 @@ using namespace std;
 int main()
 {
     int i=0;
-    while(i==0)
+    while(i!=1)
     {
         int n;
         cout<<"\n1. Roll Dice\n2. Stop Game\n\nChoice: "<<endl;
@@ -14,8 +14,7 @@ int main()
         switch(n)
         {
             case 1:
-                int x = 1 + (rand()%6);
-                cout<<"\n\t"<<x<<endl;
+                cout<<"\n\t---------> "<<(1 + (rand()%6))<<endl;
                 break;
             
             case 2:
@@ -27,4 +26,5 @@ int main()
                 break;
         }
     }
+    return 0;
 }
